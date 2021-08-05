@@ -7,13 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.Data.Doacao
+import com.example.myapplication.databinding.ItemDoacaoBinding
 
 class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdapter.ViewHolder>(DiffCallback()) {
     var listenerShare:(View) -> Unit ={}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val binding = .inflate(inflater, parent, false)
+        val binding = ItemDoacaoBinding.inflate(inflater, parent, false)
 
         return ViewHolder(binding)
     }
