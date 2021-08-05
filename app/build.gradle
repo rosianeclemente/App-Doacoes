@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+
+
 }
 
 android {
@@ -57,4 +60,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lificycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lificycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lificycle_version"
+
+    implementation "io.insert-koin:koin-android:$koin_version"
+    testImplementation "io.insert-koin:koin-test:$koin_version"
+
+
 }
