@@ -29,8 +29,6 @@ class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdap
             binding.caracteristicas.text = itens.caracteristicas
 
 
-
-
         }
 
     }
