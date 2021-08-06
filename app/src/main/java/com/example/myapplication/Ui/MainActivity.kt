@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         insertListener()
         getAll()
+        update()
 //        deleteAll()
     }
 
@@ -40,6 +41,13 @@ class MainActivity : AppCompatActivity() {
            startActivity(intent)
        }
     }
+    private fun update() {
+        binding.doacao.setOnClickListener {
+            val intent = Intent(this, AddDoacaoActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
     private fun getAll(){
         mainViewModel.getAll().observe(this, {Doacao ->
             adapter.submitList(Doacao)

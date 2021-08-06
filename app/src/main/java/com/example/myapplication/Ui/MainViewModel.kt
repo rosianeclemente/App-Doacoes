@@ -18,6 +18,9 @@ class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel()
     fun getAll(): LiveData<List<Doacao>> {
         return doacaoRepository.getAll()
     }
+    fun update(doacao: Doacao){
+        doacaoRepository.update(doacao)
+    }
     suspend fun deleteAll(id:MutableList<Int>) = doacaoRepository.deleteAll(id)
 }
 //manual pois n esta usando injeção de dependencia

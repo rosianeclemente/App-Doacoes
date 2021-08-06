@@ -11,7 +11,13 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
             doacaoDao.insert(doacao)
         }
     }
-    suspend fun update(doacao: Doacao) = doacaoDao.update(doacao)
-    fun getAll():LiveData<List<Doacao>> = doacaoDao.getAll()
+    fun getAll()= doacaoDao.getAll()
+
+    fun update (doacao: Doacao) = runBlocking {
+        launch ( Dispatchers.IO ){
+            doacaoDao.update(doacao)
+        }
+    }
+
     suspend fun deleteAll(id:MutableList<Int>) = doacaoDao.deleteAll(id)
 }
