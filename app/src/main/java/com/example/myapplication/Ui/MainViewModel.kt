@@ -5,15 +5,19 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.Data.DoacaoRepository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel() {
 
     fun insert(doacao: Doacao){
 
     }
-    suspend fun getAll(): MutableList<Doacao> {
-        return doacaoRepository.all()
+    fun getAll(): LiveData<List<Doacao>> {
+        return doacaoRepository.getAll()
     }
+    suspend fun deleteAll(id:MutableList<Int>) = doacaoRepository.deleteAll(id)
 }
 //manual pois n esta usando injeção de dependencia
 class MainViewModelFactory(private val repository: DoacaoRepository) : ViewModelProvider.Factory{

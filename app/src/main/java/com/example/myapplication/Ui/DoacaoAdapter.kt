@@ -23,7 +23,11 @@ class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdap
         holder.bind(getItem(position))
     }
     inner class ViewHolder(private val binding: ItemDoacaoBinding ):RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: Doacao){
+        fun bind(itens: Doacao){
+            binding.nome.text = itens.nome
+            binding.contato.text = itens.contato
+            binding.caracteristicas.text = itens.caracteristicas
+
 
 
 

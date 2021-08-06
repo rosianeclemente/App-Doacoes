@@ -31,7 +31,7 @@
                         android:textStyle="bold"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:text="dgsgdggdg"
+                        tools:text="Rosiane Clemente"
 
                 />
                 <com.google.android.material.textview.MaterialTextView
@@ -41,7 +41,7 @@
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/nome"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:text="dgsgdggdg"
+                        tools:text="caracteristicas do produto"
 
                 />
                 <com.google.android.material.textview.MaterialTextView
@@ -51,7 +51,7 @@
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/caracteristicas"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:text="dgsgdggdg"
+                        tools:text="contato"
 
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>

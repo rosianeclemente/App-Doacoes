@@ -10,7 +10,7 @@ data class Doacao(
     val nome: String,
     val caracteristicas: String,
     val contato: String,
-    val imagem: String
+//    val imagem: String
 
 ) {
 }

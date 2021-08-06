@@ -5,16 +5,16 @@ plugins {
     id 'kotlin-parcelize'
 
 
+
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
+    compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.myapplication"
-        minSdkVersion 21
-        targetSdkVersion 31
+        applicationId "com.example.cresci_perdi"
+        minSdk 21
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
