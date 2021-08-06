@@ -12,6 +12,7 @@ import kotlinx.coroutines.runBlocking
 class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel() {
 
     fun insert(doacao: Doacao){
+        doacaoRepository.insert(doacao)
 
     }
     fun getAll(): LiveData<List<Doacao>> {
