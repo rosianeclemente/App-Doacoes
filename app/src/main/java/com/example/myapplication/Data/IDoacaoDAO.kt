@@ -15,14 +15,13 @@ interface IDoacaoDAO {
     fun getAll():LiveData<List<Doacao>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(doacao: Doacao)
+    fun insert(doacao: Doacao)
 
-    @Update
-    suspend fun update(doacao: Doacao)
-    @Query("SELECT * FROM doacao")
-    suspend fun  all():MutableList<Doacao>
-
-    @Query("DELETE FROM doacao WHERE id IN (:id)")
-    suspend fun  deleteAll(id: MutableList<Int>)
-
+//    @Update
+//    suspend fun update(doacao: Doacao)
+//    @Query("SELECT * FROM doacao")
+//    suspend fun  all():MutableList<Doacao>
+//
+//    @Query("DELETE FROM doacao WHERE id IN (:id)")
+//    suspend fun  deleteAll(id: MutableList<Int>)
 }

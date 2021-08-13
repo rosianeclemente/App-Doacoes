@@ -8,7 +8,7 @@ import com.example.myapplication.App
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActicityAddDoacaoBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+
 
 class AddDoacaoActivity : AppCompatActivity(){
     private val binding by lazy { ActicityAddDoacaoBinding.inflate(layoutInflater) }
@@ -23,7 +23,7 @@ class AddDoacaoActivity : AppCompatActivity(){
     }
 
     private fun insertListeners() {
-        binding.buttonConfirmar.setOnClickListener {
+        binding.buttonConfirme.setOnClickListener {
             finish()
         }
         binding.buttonConfirmar.setOnClickListener {

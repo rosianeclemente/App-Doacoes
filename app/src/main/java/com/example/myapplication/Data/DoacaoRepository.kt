@@ -12,12 +12,12 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
         }
     }
     fun getAll()= doacaoDao.getAll()
-
-    fun update (doacao: Doacao) = runBlocking {
-        launch ( Dispatchers.IO ){
-            doacaoDao.update(doacao)
-        }
-    }
-
-    suspend fun deleteAll(id:MutableList<Int>) = doacaoDao.deleteAll(id)
+//
+//    fun update (doacao: Doacao) = runBlocking {
+//        launch ( Dispatchers.IO ){
+//            doacaoDao.update(doacao)
+//        }
+//    }
+//
+//    suspend fun deleteAll(id:MutableList<Int>) = doacaoDao.deleteAll(id)
 }

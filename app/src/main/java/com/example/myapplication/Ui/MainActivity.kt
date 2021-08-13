@@ -13,7 +13,7 @@ import com.example.myapplication.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import org.koin.androidx.viewmodel.ext.android.viewModel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,11 +27,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.doacao.adapter = adapter
+        binding.doacoes.adapter = adapter
 
         insertListener()
         getAll()
-        update()
+//        update()
 //        deleteAll()
     }
 
@@ -41,24 +41,24 @@ class MainActivity : AppCompatActivity() {
            startActivity(intent)
        }
     }
-    private fun update() {
-        binding.doacao.setOnClickListener {
-            val intent = Intent(this, AddDoacaoActivity::class.java)
-            startActivity(intent)
-        }
-    }
+//    private fun update() {
+//        binding.doacoes.setOnClickListener {
+//            val intent = Intent(this, AddDoacaoActivity::class.java)
+//            startActivity(intent)
+//        }
+//    }
+//
+    private fun getAll() {
+    mainViewModel.getAll().observe(this, { Doacao ->
+        adapter.submitList(Doacao)
 
-    private fun getAll(){
-        mainViewModel.getAll().observe(this, {Doacao ->
-            adapter.submitList(Doacao)
-
-        })
-    }
+    })
+//    }
 
 //    fun deleteAll(id: MutableList<Int>)= runBlocking {
 //        launch( Dispatchers.IO){
 //            mainViewModel.deleteAll(id)
 //        }
 //    }
-
+}
 }
