@@ -19,5 +19,9 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
 //        }
 //    }
 //
-//    suspend fun deleteAll(id:MutableList<Int>) = doacaoDao.deleteAll(id)
+    fun deleteAll(doacao: Doacao) = runBlocking {
+        launch( Dispatchers.IO){
+            doacaoDao.deleteAll(doacao)
+        }
+}
 }

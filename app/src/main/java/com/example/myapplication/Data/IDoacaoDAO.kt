@@ -22,6 +22,6 @@ interface IDoacaoDAO {
 //    @Query("SELECT * FROM doacao")
 //    suspend fun  all():MutableList<Doacao>
 //
-//    @Query("DELETE FROM doacao WHERE id IN (:id)")
-//    suspend fun  deleteAll(id: MutableList<Int>)
+    @Delete
+    fun  deleteAll(doacao: Doacao)
 }

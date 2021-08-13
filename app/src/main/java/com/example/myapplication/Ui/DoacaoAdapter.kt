@@ -10,7 +10,7 @@ import com.example.myapplication.Data.Doacao
 import com.example.myapplication.databinding.ItemDoacaoBinding
 
 class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdapter.ViewHolder>(DiffCallback()) {
-    var listenerShare:(View) -> Unit ={}
+    var listenerDelete:(View) -> Unit ={}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -21,6 +21,8 @@ class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(getItem(position))
+
+
     }
     inner class ViewHolder(private val binding: ItemDoacaoBinding ):RecyclerView.ViewHolder(binding.root) {
         fun bind(itens: Doacao){

@@ -4,8 +4,13 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.system.Os.remove
+import android.view.View
+import android.widget.AdapterView
 import androidx.activity.viewModels
 import androidx.lifecycle.viewModelScope
+import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Delete
 import com.example.myapplication.App
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.R
@@ -13,6 +18,7 @@ import com.example.myapplication.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import java.nio.file.Files.delete
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,8 +38,9 @@ class MainActivity : AppCompatActivity() {
         insertListener()
         getAll()
 //        update()
-//        deleteAll()
+
     }
+
 
     private fun insertListener() {
        binding.FloatButton.setOnClickListener{
@@ -52,13 +59,8 @@ class MainActivity : AppCompatActivity() {
     mainViewModel.getAll().observe(this, { Doacao ->
         adapter.submitList(Doacao)
 
-    })
-//    }
+      })
+    }
 
-//    fun deleteAll(id: MutableList<Int>)= runBlocking {
-//        launch( Dispatchers.IO){
-//            mainViewModel.deleteAll(id)
-//        }
-//    }
-}
+
 }
