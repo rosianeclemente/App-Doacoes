@@ -17,11 +17,11 @@ interface IDoacaoDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(doacao: Doacao)
 
-//    @Update
-//    suspend fun update(doacao: Doacao)
-//    @Query("SELECT * FROM doacao")
-//    suspend fun  all():MutableList<Doacao>
-//
+    @Update
+    suspend fun update(doacao: Doacao)
+    @Query("SELECT * FROM doacao")
+    suspend fun  all():MutableList<Doacao>
+
     @Delete
-    fun  deleteAll(doacao: Doacao)
+    fun  deleteAll(id: Doacao)
 }

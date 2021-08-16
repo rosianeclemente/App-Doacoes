@@ -25,7 +25,7 @@
                     android:layout_margin="12dp">
 
                 <ImageButton
-                    android:id="@+id/delete"
+                    android:id="@+id/mvc_delete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_delete_24"
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_edit_24"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/delete"
+                    app:layout_constraintStart_toEndOf="@+id/mvc_delete"
                     tools:ignore="MissingConstraints" />
                 <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/nome"

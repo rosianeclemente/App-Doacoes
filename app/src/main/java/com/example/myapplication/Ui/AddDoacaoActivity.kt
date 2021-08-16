@@ -20,7 +20,10 @@ class AddDoacaoActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         insertListeners()
+
     }
+
+
 
     private fun insertListeners() {
         binding.buttonConfirme.setOnClickListener {
@@ -28,6 +31,7 @@ class AddDoacaoActivity : AppCompatActivity(){
         }
         binding.buttonConfirmar.setOnClickListener {
             val doacao = Doacao(
+                id = intent.getIntExtra(DOACAO_ID, 0),
                 nome = binding.tilNome.editText?.text.toString(),
                 contato = binding.tilContato.editText?.text.toString(),
                 caracteristicas = binding.tilCaracteristicas.editText?.text.toString()
@@ -37,5 +41,9 @@ class AddDoacaoActivity : AppCompatActivity(){
             Toast.makeText(this, R.string.Cadastro_realizado, Toast.LENGTH_LONG).show()
             finish()
         }
+
+    }
+    companion object{
+        const val DOACAO_ID = "doacao_id"
     }
 }

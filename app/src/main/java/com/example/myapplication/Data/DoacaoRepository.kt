@@ -13,15 +13,15 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
     }
     fun getAll()= doacaoDao.getAll()
 //
-//    fun update (doacao: Doacao) = runBlocking {
-//        launch ( Dispatchers.IO ){
-//            doacaoDao.update(doacao)
-//        }
-//    }
+    fun update (doacao: Doacao) = runBlocking {
+        launch ( Dispatchers.IO ){
+            doacaoDao.update(doacao)
+        }
+    }
 //
-    fun deleteAll(doacao: Doacao) = runBlocking {
+    fun deleteAll(id: Doacao) = runBlocking {
         launch( Dispatchers.IO){
-            doacaoDao.deleteAll(doacao)
+            doacaoDao.deleteAll(id)
         }
 }
 }

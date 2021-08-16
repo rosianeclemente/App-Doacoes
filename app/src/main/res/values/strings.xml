@@ -3,4 +3,6 @@
     <string name="cresci_e_perdi">Ajude o proximo!</string>
     <string name="adicionar">Adiconar doação</string>
     <string name="Cadastro_realizado">Cadastro realizado com sucesso!</string>
+    <string name="deletar">delete!</string>
+    <string name="editar">edit!</string>
 </resources>

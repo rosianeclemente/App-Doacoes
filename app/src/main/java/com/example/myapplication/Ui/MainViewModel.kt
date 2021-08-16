@@ -21,7 +21,10 @@ class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel()
 //    fun update(doacao: Doacao){
 //        doacaoRepository.update(doacao)
 //    }
-    fun deleteAll(doacao: Doacao) = doacaoRepository.deleteAll(doacao)
+    fun deleteAll(id: Doacao) {
+        doacaoRepository.deleteAll(id)
+
+}
 }
 //manual pois n esta usando injeção de dependencia
 class MainViewModelFactory(private val repository: DoacaoRepository) : ViewModelProvider.Factory{
