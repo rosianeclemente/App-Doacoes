@@ -31,15 +31,15 @@ class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdap
             binding.nome.text = itens.nome
             binding.contato.text = itens.contato
             binding.caracteristicas.text = itens.caracteristicas
-            binding.mvcDelete.setOnClickListener{
+            binding.more.setOnClickListener{
                 showPopup(itens)
             }
 
 
         }
         private fun showPopup(itens: Doacao) {
-            val iconDelete = binding.mvcDelete
-            val popupMenu = PopupMenu(iconDelete.context, iconDelete)
+            val iconMore = binding.more
+            val popupMenu = PopupMenu(iconMore.context, iconMore)
             popupMenu.menuInflater.inflate(R.menu.popup_menu, popupMenu.menu)
             popupMenu.setOnMenuItemClickListener {
                 when(it.itemId){
