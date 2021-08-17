@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         update()
         delete()
 
+
     }
 
 
@@ -40,11 +41,24 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun update() {
-        binding.doacoes.setOnClickListener {
+//        binding.doacoes.setOnClickListener {
+//            val intent = Intent(this, AddDoacaoActivity::class.java)
+//            startActivity(intent)
+//        }
+//        adapter.listernerUpdate = {
+//            val intent = Intent(this, AddDoacaoActivity::class.java)
+//            startActivity(intent)
+//            mainViewModel.update(it)
+//
+//        }
+        adapter.listernerUpdate = {
             val intent = Intent(this, AddDoacaoActivity::class.java)
             startActivity(intent)
+            intent.putExtra(AddDoacaoActivity.DOACAO_ID, it.id)
+            mainViewModel.update(it)
         }
     }
+
 //
     private fun getAll() {
     mainViewModel.getAll().observe(this, { Doacao ->
@@ -52,6 +66,8 @@ class MainActivity : AppCompatActivity() {
 
       })
     }
+
+
     private  fun delete() {
         adapter.listenerDelete= {
             mainViewModel.deleteAll(it)

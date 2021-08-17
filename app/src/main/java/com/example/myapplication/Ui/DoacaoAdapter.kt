@@ -13,6 +13,7 @@ import com.example.myapplication.databinding.ItemDoacaoBinding
 
 class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdapter.ViewHolder>(DiffCallback()) {
     var listenerDelete:(Doacao) -> Unit ={}
+    var listernerUpdate:(Doacao) -> Unit ={}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -44,6 +45,7 @@ class DoacaoAdapter: androidx.recyclerview.widget.ListAdapter<Doacao, DoacaoAdap
             popupMenu.setOnMenuItemClickListener {
                 when(it.itemId){
                     R.id.mvc_delete -> listenerDelete(itens)
+                    R.id.edit -> listernerUpdate(itens)
                 }
                 return@setOnMenuItemClickListener true
             }
