@@ -5,6 +5,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+
 class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
     fun insert(doacao: Doacao) = runBlocking {
         launch ( Dispatchers.IO ){
@@ -13,9 +14,9 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
     }
     fun getAll()= doacaoDao.getAll()
 //
-    fun update (doacao: Doacao) = runBlocking {
+    fun update (id: Doacao) = runBlocking {
         launch ( Dispatchers.IO ){
-            doacaoDao.update(doacao)
+            doacaoDao.update(id)
         }
     }
 //

@@ -38,6 +38,12 @@ class MainActivity : AppCompatActivity() {
            val intent = Intent(this, AddDoacaoActivity::class.java)
            startActivity(intent)
        }
+        adapter.listernerUpdate = {
+            val intent = Intent(this, AddDoacaoActivity::class.java)
+            intent.putExtra(AddDoacaoActivity.DOACAO_ID, it.id)
+            startActivityForResult(intent, CREATE_NEW_TASK)
+
+        }
 
     }
     private fun update() {
@@ -57,6 +63,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(AddDoacaoActivity.DOACAO_ID, it.id)
             mainViewModel.update(it)
         }
+
     }
 
 //
@@ -75,7 +82,9 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
+    companion object{
+        private const val  CREATE_NEW_TASK = 1000
+    }
 
 
 }

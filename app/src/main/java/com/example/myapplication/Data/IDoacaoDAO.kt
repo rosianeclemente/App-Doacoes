@@ -18,9 +18,7 @@ interface IDoacaoDAO {
     fun insert(doacao: Doacao)
 
     @Update
-    suspend fun update(doacao: Doacao)
-//    @Query("SELECT * FROM doacao")
-//    suspend fun  all():MutableList<Doacao>
+    fun update(id: Doacao)
 
     @Delete
     fun  deleteAll(id: Doacao)

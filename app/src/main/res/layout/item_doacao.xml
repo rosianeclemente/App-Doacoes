@@ -14,6 +14,7 @@
             android:focusable="true"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
+            app:cardBackgroundColor="#C9DDDADA"
             app:layout_constraintDimensionRatio="16:9"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +68,17 @@
 
                 />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/imagemView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="80dp"
+                android:src="@mipmap/ic_launcher_foreground"
+                app:layout_constraintLeft_toLeftOf="@id/nome"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"/>
 
 
     </com.google.android.material.card.MaterialCardView>
