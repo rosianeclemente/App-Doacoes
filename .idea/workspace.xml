@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1587dbd8-913a-4a51-aa4b-803a83ceff4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+    <list default="true" id="1587dbd8-913a-4a51-aa4b-803a83ceff4f" name="Changes" comment="adicionando imagem">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,27 +21,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/Doacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/Doacao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/DoacaoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/DoacaoRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/IDoacaoDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Data/IDoacaoDAO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Ui/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Ui/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/Ui/MainViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_doacao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_doacao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +180,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adicionando imagem" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando imagem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

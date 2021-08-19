@@ -32,6 +32,7 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/FloatButton"
             android:layout_width="wrap_content"
+            android:backgroundTint="@color/green_700"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             android:src="@drawable/ic__add"

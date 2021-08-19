@@ -20,65 +20,65 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="12dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp">
 
 
-                <ImageButton
-                    android:id="@+id/more"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_more_vert_24"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.981"
-                    app:layout_constraintRight_toRightOf="@id/nome"
-                    app:layout_constraintStart_toStartOf="@id/nome"
-                    tools:ignore="MissingConstraints"/>
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.981"
+                app:layout_constraintRight_toRightOf="@id/nome"
+                app:layout_constraintStart_toStartOf="@id/nome"
+                tools:ignore="MissingConstraints"/>
 
-                <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/nome"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="Rosiane Clemente"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Rosiane Clemente"
 
-                />
-                <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/caracteristicas"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        app:layout_constraintTop_toBottomOf="@id/nome"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="caracteristicas do produto"
+            />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/caracteristicas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nome"
+                tools:text="caracteristicas do produto"
 
-                />
-                <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/contato"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        app:layout_constraintTop_toBottomOf="@id/caracteristicas"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="contato"
+            />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/contato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/caracteristicas"
+                tools:text="contato"
 
-                />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            />
             <ImageView
                 android:id="@+id/imagemView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="248dp"
-                android:layout_marginTop="80dp"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="28dp"
                 android:src="@mipmap/ic_launcher_foreground"
                 app:layout_constraintLeft_toLeftOf="@id/nome"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
