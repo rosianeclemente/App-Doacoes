@@ -43,6 +43,7 @@ class AddDoacaoActivity : AppCompatActivity(){
         }
 
     }
+
     companion object{
         const val DOACAO_ID = "doacao_id"
     }

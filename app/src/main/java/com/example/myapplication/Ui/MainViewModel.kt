@@ -5,9 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.Data.DoacaoRepository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel() {
 
