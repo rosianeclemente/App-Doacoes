@@ -1,4 +1,4 @@
-### Cresci-Perdi
+# Cresci-Perdi
 <p>Aplicativo Desenvolvido para estudos de RecyclerView, Activity e LifeCycle.</p>
 <div style="display: inline_block" >
   <br>
