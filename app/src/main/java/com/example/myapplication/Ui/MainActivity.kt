@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
         adapter.listernerUpdate={
             val intent = Intent(this, AddDoacaoActivity::class.java)
             startActivity(intent)
+            mainViewModel.update(it)
+            getAll()
         }
     }
 }

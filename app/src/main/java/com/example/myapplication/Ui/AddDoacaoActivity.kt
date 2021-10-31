@@ -15,10 +15,12 @@ class AddDoacaoActivity : AppCompatActivity(){
     private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
     }
+    private val adapter by lazy { DoacaoAdapter() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         insertListeners()
+        updateListeners()
     }
 
 
@@ -41,6 +43,25 @@ class AddDoacaoActivity : AppCompatActivity(){
         }
 
     }
+    private fun updateListeners() {
+        binding.buttonConfirme.setOnClickListener {
+            finish()
+        }
+        adapter.listernerUpdate= {
+            val doacao = Doacao(
+                id = this.taskId,
+                nome = binding.tilNome.editText?.text.toString(),
+                contato = binding.tilContato.editText?.text.toString(),
+                caracteristicas = binding.tilCaracteristicas.editText?.text.toString()
+
+            )
+            mainViewModel.update(doacao)
+            Toast.makeText(this, R.string.Cadastro_realizado, Toast.LENGTH_LONG).show()
+            finish()
+        }
+
+    }
+
 
     companion object{
         const val DOACAO_ID = "doacao_id"
