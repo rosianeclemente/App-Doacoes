@@ -18,7 +18,7 @@ interface IDoacaoDAO {
     fun insert(doacao: Doacao)
 
     @Update
-    fun update(id: Doacao)
+    fun update(doacao: Doacao)
 
     @Delete
     fun  deleteAll(id: Doacao)

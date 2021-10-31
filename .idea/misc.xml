@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/font/fontfamily.xml" value="0.2921875" />
         <entry key="app/src/main/res/font/montserrat_bold.xml" value="0.2921875" />
         <entry key="app/src/main/res/layout/acticity_add_doacao.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_item_doacao.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_doacao.xml" value="0.25" />
       </map>

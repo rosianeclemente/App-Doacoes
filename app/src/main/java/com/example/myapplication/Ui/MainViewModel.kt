@@ -15,8 +15,8 @@ class MainViewModel(private val doacaoRepository: DoacaoRepository): ViewModel()
     fun getAll(): LiveData<List<Doacao>> {
         return doacaoRepository.getAll()
     }
-    fun update(id: Doacao){
-        doacaoRepository.update(id)
+    fun update(doacao: Doacao){
+        doacaoRepository.update(doacao)
     }
     fun deleteAll(id: Doacao) {
         doacaoRepository.deleteAll(id)

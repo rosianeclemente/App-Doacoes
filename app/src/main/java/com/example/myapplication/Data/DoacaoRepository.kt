@@ -13,9 +13,9 @@ class DoacaoRepository(private val doacaoDao: IDoacaoDAO) {
     }
     fun getAll()= doacaoDao.getAll()
 //
-    fun update (id: Doacao) = runBlocking {
+    fun update (doacao: Doacao) = runBlocking {
         launch ( Dispatchers.IO ){
-            doacaoDao.update(id)
+            doacaoDao.update(doacao)
         }
     }
 //

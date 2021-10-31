@@ -10,7 +10,7 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.ActicityAddDoacaoBinding
 
 
-class AddDoacaoActivity : AppCompatActivity(){
+class UpdateDoacaoActivity : AppCompatActivity(){
     private val binding by lazy { ActicityAddDoacaoBinding.inflate(layoutInflater) }
     private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
@@ -18,31 +18,25 @@ class AddDoacaoActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        insertListeners()
+        upddateListeners()
     }
 
-
-
-    private fun insertListeners() {
+    private fun upddateListeners() {
         binding.buttonConfirme.setOnClickListener {
             finish()
         }
         binding.buttonConfirmar.setOnClickListener {
             val doacao = Doacao(
-                id = intent.getIntExtra(DOACAO_ID, 0),
+                id = 1,
                 nome = binding.tilNome.editText?.text.toString(),
                 contato = binding.tilContato.editText?.text.toString(),
                 caracteristicas = binding.tilCaracteristicas.editText?.text.toString()
 
             )
-            mainViewModel.insert(doacao)
+            mainViewModel.update(doacao)
             Toast.makeText(this, R.string.Cadastro_realizado, Toast.LENGTH_LONG).show()
             finish()
         }
 
-    }
-
-    companion object{
-        const val DOACAO_ID = "doacao_id"
     }
 }

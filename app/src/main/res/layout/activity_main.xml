@@ -27,7 +27,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_margin="16dp"
             tools:itemCount="8"
-            tools:listitem="@layout/item_doacao"
+            tools:listitem="@layout/activity_item_doacao"
     />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/FloatButton"

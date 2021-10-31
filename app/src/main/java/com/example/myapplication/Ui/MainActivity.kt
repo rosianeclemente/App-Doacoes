@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         insertListener()
         getAll()
         delete()
+        update()
     }
     private fun insertListener() {
        binding.FloatButton.setOnClickListener{
@@ -45,6 +46,13 @@ class MainActivity : AppCompatActivity() {
             mainViewModel.deleteAll(it)
             Toast.makeText(this, "Excluído com Sucesso!", Toast.LENGTH_LONG).show()
             getAll()
+        }
+    }
+
+    private fun update(){
+        adapter.listernerUpdate={
+            val intent = Intent(this, AddDoacaoActivity::class.java)
+            startActivity(intent)
         }
     }
 }
