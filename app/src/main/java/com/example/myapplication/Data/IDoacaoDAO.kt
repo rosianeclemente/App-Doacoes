@@ -18,7 +18,11 @@ interface IDoacaoDAO {
     fun insert(doacao: Doacao)
 
     @Update
-    fun update(doacao: Doacao)
+    fun update(id: Doacao)
+
+//    @Query("UPDATE Doacao SET nome = :description, contato= :title WHERE id =:id")
+//    fun update(description: String?, title: String?, id: Int)
+
 
     @Delete
     fun  deleteAll(id: Doacao)

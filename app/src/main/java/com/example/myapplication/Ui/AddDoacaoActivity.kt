@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.App
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.R
+import com.example.myapplication.Ui.ViewModel.MainViewModel
+import com.example.myapplication.Ui.ViewModel.MainViewModelFactory
 import com.example.myapplication.databinding.ActicityAddDoacaoBinding
 
 
@@ -56,7 +58,7 @@ class AddDoacaoActivity : AppCompatActivity(){
 
             )
             mainViewModel.update(doacao)
-            Toast.makeText(this, R.string.Cadastro_realizado, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Atualizado com sucesso", Toast.LENGTH_LONG).show()
             finish()
         }
 

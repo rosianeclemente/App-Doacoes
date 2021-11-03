@@ -12,6 +12,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication">
         <activity android:name=".Ui.AddDoacaoActivity"></activity>
+        <activity android:name=".Ui.UpdateDoacaoActivity"></activity>
         <activity android:name=".Ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

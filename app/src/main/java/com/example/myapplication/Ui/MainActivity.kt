@@ -8,6 +8,8 @@ import androidx.activity.viewModels
 import com.example.myapplication.App
 import com.example.myapplication.Data.Doacao
 import com.example.myapplication.R
+import com.example.myapplication.Ui.ViewModel.MainViewModel
+import com.example.myapplication.Ui.ViewModel.MainViewModelFactory
 import com.example.myapplication.databinding.ActivityMainBinding
 
 
@@ -51,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun update(){
         adapter.listernerUpdate={
-            val intent = Intent(this, AddDoacaoActivity::class.java)
+            val intent = Intent(this,UpdateDoacaoActivity::class.java)
             startActivity(intent)
             mainViewModel.update(it)
             getAll()
