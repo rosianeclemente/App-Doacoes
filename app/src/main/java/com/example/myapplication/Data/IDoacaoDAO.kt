@@ -17,8 +17,11 @@ interface IDoacaoDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(doacao: Doacao)
 
-    @Update
+    @Update(onConflict = OnConflictStrategy.IGNORE)
     fun update(id: Doacao)
+
+//    @Update(onConflict = OnConflictStrategy.IGNORE)
+//    suspend fun update(id: Doacao)
 
 //    @Query("UPDATE Doacao SET nome = :description, contato= :title WHERE id =:id")
 //    fun update(description: String?, title: String?, id: Int)

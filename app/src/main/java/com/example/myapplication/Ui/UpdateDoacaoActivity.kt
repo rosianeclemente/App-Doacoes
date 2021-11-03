@@ -32,7 +32,7 @@ class UpdateDoacaoActivity : AppCompatActivity(){
 
         binding.buttonConfirmar.setOnClickListener  {
             val doacao = Doacao(
-                id =this.taskId ,
+                id = this.taskId ,
                 nome = binding.tilNome.editText?.text.toString(),
                 contato = binding.tilContato.editText?.text.toString(),
                 caracteristicas = binding.tilCaracteristicas.editText?.text.toString()
